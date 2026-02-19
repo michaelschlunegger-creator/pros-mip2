@@ -105,12 +105,6 @@ function App() {
               {showMockupNote && <span className="mockup-toast">FathimAI is a mockup in this version.</span>}
             </div>
           </div>
-
-          <div className="hint-chip-row" aria-label="FathimAI example prompts">
-            {fathimHints.map((hint) => (
-              <span key={hint} className="hint-chip">{hint}</span>
-            ))}
-          </div>
         </section>
 
         {comparison && (

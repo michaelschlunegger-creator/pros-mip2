@@ -62,8 +62,26 @@ h1 { font-size: clamp(1.15rem, 2vw, 1.5rem); }
 .controls-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: .8rem; }
 .control-group { display: grid; gap: .4rem; font-size: .9rem; color: var(--muted); }
 select { background: var(--surface-alt); color: var(--text); border: 1px solid var(--border); border-radius: 10px; padding: .65rem; }
-.compare-button { margin-top: .85rem; background: #2f9e44; color: #ffffff; border: 1px solid #237a34; border-radius: 10px; padding: .65rem 1rem; cursor: pointer; }
-.compare-button:hover { transform: translateY(-1px); }
+.compare-button {
+  margin-top: .85rem;
+  background: linear-gradient(160deg, #36b355, #249645);
+  color: #ffffff;
+  border: 1px solid #237a34;
+  border-radius: 10px;
+  padding: .65rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(35, 122, 52, 0.28);
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+.compare-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 19px rgba(35, 122, 52, 0.32);
+}
+.compare-button:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 12px rgba(35, 122, 52, 0.25);
+}
 .compare-button:disabled { opacity: .5; cursor: not-allowed; }
 .score-panel { display:flex; justify-content:space-between; align-items:center; }
 .score-badge { padding: .35rem .65rem; border-radius: 999px; background: rgba(255,255,255,.72); border: 1px solid var(--border); }
